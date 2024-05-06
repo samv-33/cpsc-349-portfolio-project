@@ -1,0 +1,12 @@
+:root{
+    /*Custon css colors*/
+    --text-color: white;
+    --primary-color: #576cbc;
+    --secondary-color: #19376d;
+    --dark-color: #0b2447;
+    --bg-color: #04152d;
+
+    /*Custom css fonts*/
+    --main-font: "Roboto";
+
+}
