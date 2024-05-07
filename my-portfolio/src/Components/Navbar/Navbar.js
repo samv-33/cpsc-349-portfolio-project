@@ -5,7 +5,7 @@ import styles from './Navbar.module.css'
 const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
-        <a className={styles.title} href='/'>mPortfolio</a>
+        <a className={styles.title} href='/'>Portfolio</a>
         <div className={styles.menu}>
             <ul className={styles.menuItems}>
                 <li>    
