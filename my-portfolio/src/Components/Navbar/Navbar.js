@@ -10,7 +10,7 @@ const Navbar = () => {
         <a className={styles.title} href='/'>Portfolio</a>
         <div className={styles.menu}>
             <img className={styles.menuOptn}
-             src={getImageUrl("navbar/menuIcon.png")} 
+             src={getImageUrl('navbar/menuIcon.png')} 
              alt="menu-optn"/>
             <ul className={styles.menuItems}>
                 <li>    
