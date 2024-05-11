@@ -4,7 +4,7 @@ import { getImageUrl } from '../../utility'
 
 
 const About = () => {
-  return <section className={styles.container}>
+  return <section className={styles.container} id="about">
     <h2 className={styles.title}>About Me</h2>
     <div className={styles.content}>  
         <img className={styles.aboutImg} src={getImageUrl("assets/about/myavatar_desk.png")} alt="me-with-laptop"/>

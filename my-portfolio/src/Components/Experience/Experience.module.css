@@ -1,0 +1,28 @@
+@import '../../vars.css';
+
+
+.container{
+    color: var(--text-color);
+    margin-top: 79px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.title{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.content{
+    width: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.skills{
+
+}

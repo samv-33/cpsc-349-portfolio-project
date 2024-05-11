@@ -1,0 +1,33 @@
+[
+    {
+        "title": "HTML",
+        "imgSrc": "assets/skills/html.png"
+
+    },
+    {
+        "title": "CSS",
+        "imgSrc": "assets/skills/css.png"
+
+    },
+    {
+        "title": "JavaScript",
+        "imgSrc": "assets/skills/javascript.png"
+
+    },
+    {
+        "title": "React",
+        "imgSrc": "assets/skills/react.png"
+
+    },
+    {
+        "title": "Node.js",
+        "imgSrc": "assets/skills/node.png"
+
+    },
+    {
+        "title": "Firebase",
+        "imgSrc": "assets/skills/firebase.png"
+
+    }
+
+]
