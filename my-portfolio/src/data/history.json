@@ -5,7 +5,7 @@
         "startDate": "Jan 2024",
         "endDate": "May 2024",
         "experiences": ["Worked on Pinchr Web App", "Used React, Firebase and Node.js to create an expense manager web app."],
-        "imageSrc": "assets/history/csuf.png" 
+        "imageSrc": "assets/history/csuf_logo.png" 
     },
     {
         "role": "Computer Science Undergraduate Student",
@@ -13,7 +13,7 @@
         "startDate": "Mar 2024",
         "endDate": "Apr 2024",
         "experiences": ["Worked on Quiz Web App", "Used HTML, CSS, JavaScript and Node.js to create a Quiz web app."],
-        "imageSrc": "assets/history/csuf.png" 
+        "imageSrc": "assets/history/csuf_logo.png" 
 
     }
 ]

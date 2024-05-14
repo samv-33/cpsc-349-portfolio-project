@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Pinchr Expense Manager",
+        "imageSrc": "assets/projects/pinchr.png",
+        "description": "This is a project made to manage expenses",
+        "skills": ["React", "Firebase", "Node.js"],
+        "demo": "www.github.com",
+        "source": "www.github.com"
+    },
+    {
+        "title": "Quiz Web App",
+        "imageSrc": "assets/projects/quiz.png",
+        "description": "This is a project made to take random quizzes",
+        "skills": ["HTML", "CSS", "Javascript", "Node.js"],
+        "demo": "www.github.com",
+        "source": "www.github.com"
+
+    }
+]
