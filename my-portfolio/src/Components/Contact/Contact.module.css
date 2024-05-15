@@ -1,0 +1,102 @@
+@import '../../vars.css';
+
+.container{
+    color: var(--text-color);
+    display: flex;
+    margin-top: 120px;
+    background-color: var(--secondary-color);
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 58px 10%;
+    gap: 10px;
+
+}
+.text h2{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.text p{
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    gap: 26px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.link img{
+    width: 10%;
+    height: auto;
+}
+
+.link a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:830px){
+    .container{
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .links{
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:415px){
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .text h2{
+        font-size: 70px;
+    }
+
+    .text p{
+        font-size: 35px;
+    }
+
+    .links{
+        align-items: center;
+    }
+
+    .link a{
+        font-size: 20px;
+    }
+
+}

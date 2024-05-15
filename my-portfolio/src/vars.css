@@ -1,10 +1,10 @@
 :root{
     /*Custon css colors*/
     --text-color: white;
-    --primary-color: #576cbc;
-    --secondary-color: #19376d;
-    --dark-color: #0b2447;
-    --bg-color: #04152d;
+    --primary-color: #4CAF50;
+    --secondary-color: #388E3C;
+    --dark-color: #1B5E20;
+    --bg-color: #0D3C14;
 
     /*Custom css fonts*/
     --main-font: "Roboto";
