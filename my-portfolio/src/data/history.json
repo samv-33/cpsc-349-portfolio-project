@@ -4,7 +4,7 @@
         "institution": "California State University, Fullerton",
         "startDate": "Jan 2024",
         "endDate": "May 2024",
-        "experiences": ["Worked on Pinchr Web App", "Used React, Firebase and Node.js to create an expense manager for a group project."],
+        "experiences": ["Worked on Pinchr Expense Manager Web App for a group project in a software engineering class", "created some UI components for the expense manager, used Firebase for backend services so users can manage expenses in the database, and used Node.js as the development server to handle requests, compile, run and test the web app locally"],
         "imageSrc": "assets/history/csuf_logo.png" 
     },
     {
@@ -12,7 +12,16 @@
         "institution": "California State University, Fullerton",
         "startDate": "Mar 2024",
         "endDate": "Apr 2024",
-        "experiences": ["Worked on Quiz Web App", "Used HTML, CSS, JavaScript and Node.js to create a Quiz web app for a group project."],
+        "experiences": ["Worked on a Quiz Web App for a group project in a front-end web development class", "Made the quiz questions, styled the quiz with css, fixed some minor bugs in the Javascript file for this group project"],
+        "imageSrc": "assets/history/csuf_logo.png" 
+
+    },
+    {
+        "role": "Computer Science Undergraduate Student",
+        "institution": "California State University, Fullerton",
+        "startDate": "Apr 2024",
+        "endDate": "May 2024",
+        "experiences": ["Worked on this portfolio project for a front-end web development class", "Used React to create the whole project and Node.js as the development server to handle requests, compile, run and test the web app locally"],
         "imageSrc": "assets/history/csuf_logo.png" 
 
     }
