@@ -12,7 +12,7 @@ const ContactInfo = () => {
     <ul className={styles.links}>
       <li className={styles.link}>
         <img src={getImageUrl("assets/contacts/gmailIcon.png")} alt="email contact info"/>
-        <a href="mailto:psamuelyl@gmail.com">psamuelyl@gmail.com</a>
+        <a href="mailto:psamuelyl@gmail.com" target="_blank" rel="noopenr noreferrer">psamuelyl@gmail.com</a>
 
       </li>
       <li className={styles.link}>

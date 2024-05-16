@@ -12,7 +12,7 @@ const Hero = () => {
                 interested to become a full-stack developer.
 
             </p>
-            <a href="mailto:psamuelyl@gmail.com" className={styles.contactInfo}>Contact Info</a>
+            <a href="mailto:psamuelyl@gmail.com" className={styles.contactInfo} target='_blank' rel='noopener noreferrer'>Contact Info</a>
         </div>
         <img src={getImageUrl('assets/hero/myavatar.png')} alt="hero-img" className={styles.heroImg}/>
         <div className={styles.topBlur}/>

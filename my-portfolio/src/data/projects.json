@@ -4,16 +4,25 @@
         "imageSrc": "assets/projects/pinchr.png",
         "description": "This is a project made to manage expenses",
         "skills": ["React", "Firebase", "Node.js"],
-        "demo": "www.github.com",
-        "source": "www.github.com"
+        "demo": "https://pinchr-13af6.web.app/",
+        "source": "https://github.com/samv-33/ProjectPinchr"
     },
     {
         "title": "Quiz Web App",
         "imageSrc": "assets/projects/quiz.png",
         "description": "This is a project made to take random quizzes",
         "skills": ["HTML", "CSS", "Javascript", "Node.js"],
-        "demo": "www.github.com",
-        "source": "www.github.com"
+        "demo": "https://cpsc-349-quiz.netlify.app/",
+        "source": "https://github.com/samv-33/cpsc-349-quiz-app"
+
+    },
+    {
+        "title": "Portfolio Web App",
+        "imageSrc": "assets/projects/portfolio.png",
+        "description": "This is my personal portfolio project",
+        "skills": ["React", "Node.js"],
+        "demo": "",
+        "source": "https://github.com/samv-33/cpsc-349-portfolio-project"
 
     }
 ]
