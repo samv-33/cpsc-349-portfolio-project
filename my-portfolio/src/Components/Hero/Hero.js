@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section className={styles.container}>
         <div className={styles.content} ref={contentRef}>
-            <h1 className={styles.title}>Hi, I'm Sam</h1>
+            <h1 className={styles.title}>Hi, I'm Sam Vo!</h1>
             <p className={styles.description}>I'm a Computer Science student who is 
                 interested to become a full-stack developer.
 
