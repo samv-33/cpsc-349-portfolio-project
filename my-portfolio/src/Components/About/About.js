@@ -3,6 +3,7 @@ import styles from './About.module.css'
 import { getImageUrl } from '../../utility'
 
 
+// Functional component 'About' to render the "About Me" section
 const About = () => {
   return <section className={styles.container} id="about">
     <h2 className={styles.title}>About Me</h2>
