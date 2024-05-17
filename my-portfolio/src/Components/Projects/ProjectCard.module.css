@@ -55,7 +55,6 @@
     margin-top: 26px;
     display: flex;
     justify-content: space-around;
-
 }
 
 .link{
@@ -66,7 +65,12 @@
     border-radius: 100px;
     background-color: var(--primary-color);
     padding: 1px 22px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.30);
 }
+ .link:hover{
+    background-color: var(--secondary-color);
+
+ }
 
 @media screen and (max-width:830px){
     .link{

@@ -23,6 +23,6 @@
         "endDate": "May 2024",
         "experiences": ["Worked on this portfolio project for a front-end web development class", "Used React to create the whole project and Node.js as the development server to handle requests, compile, run and test the web app locally"],
         "imageSrc": "assets/history/csuf_logo.png" 
-
     }
+
 ]

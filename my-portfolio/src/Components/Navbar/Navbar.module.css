@@ -94,13 +94,11 @@
          rgb(56, 142, 60, 1) 100%);
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
-
     }
 
     .menuOpen{
         display: flex;
-        z-index: 1;
-
+        z-index: 1; 
     }
     
 }

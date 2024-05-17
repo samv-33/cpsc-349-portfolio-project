@@ -28,7 +28,6 @@
     flex-wrap: wrap;
     width: 45%;
     gap: 10px;
-    justify-content: center;
 }
 
 .skill{
@@ -37,28 +36,32 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 11px;
-    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .skillImgContainer{
     background-color: var(--secondary-color);
     border-radius: 100%;
     display: flex;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     align-items: center;
     justify-content: center;
 }
 
 .skillImgContainer img{
     width: 75px;
-
 }
 
 .skill p{
     font-size: 25px;
     font-family: var(--main-font);
     font-weight: 500;
+}
+
+.skill + .skill + .skill + .skill + .skill + .skill{
+    margin-bottom: 800px;
 }
 
 .history{
@@ -73,11 +76,9 @@
     flex-direction: row;
     align-items: center;
     gap: 17px;
-    background: #19376d;
     background: linear-gradient(90deg, #194d25, rgba(25, 77, 37, 0) 100%);
     border-radius: 10px;
     padding: 24px;
-
 
 }
 
@@ -93,7 +94,7 @@
 }
 
 .historyItemInfo h3{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
 
 }
@@ -101,11 +102,9 @@
 .historyItemInfo ul{
     margin-top: 6px;
     list-style-position: inside;
-    font-size: 25px;
-    list-style-type: disc;
-    margin-left: 17px;
-
-
+    list-style: disc;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 830px){
@@ -120,6 +119,9 @@
         flex-direction: row;
         justify-content: center;
         margin-bottom: 20px;
+    }
+    .skill + .skill + .skill + .skill + .skill + .skill{
+        margin-bottom: auto;
     }
 
     .history{
