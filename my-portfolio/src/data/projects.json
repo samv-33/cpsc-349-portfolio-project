@@ -21,7 +21,7 @@
         "imageSrc": "assets/projects/portfolio.png",
         "description": "This is my personal portfolio project",
         "skills": ["React", "Node.js"],
-        "demo": "samvo-portfolio.netlify.app",
+        "demo": "http://samvo-portfolio.netlify.app/",
         "source": "https://github.com/samv-33/cpsc-349-portfolio-project"
     }
 ]
