@@ -136,6 +136,10 @@
     }
     .content{
         align-items: center; /* Center align text content */
-        color: var(--text-color); /*makes all content color to white*/
+    }
+
+    /*style title for smaller devices*/
+    .title{
+        color: var(--text-color); /*Set color to the custom variable font color*/
     }
 }
