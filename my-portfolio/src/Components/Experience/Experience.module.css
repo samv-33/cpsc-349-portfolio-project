@@ -1,38 +1,43 @@
-@import '../../vars.css';
+@import '../../vars.css'; /* Importing variables for consistent theming */
 
-
+/* Styling for container */
 .container{
-    color: var(--text-color);
+    color: var(--text-color); /* set text color using custom variables*/
     margin-top: 79px;
     margin-left: 10%;
     margin-right: 10%;
 
 }
+
+/* Styling for title*/
 .title{
-    color: var(--text-color);
+    color: var(--text-color); /* Set text color from custom variables*/
     font-weight: 700;
     font-size: 35px;
     letter-spacing: 1.75px;
     text-transform: uppercase;
 }
 
+/* Styling for content*/
 .content{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* evenly distribute space between items*/
     margin-top: 14px;
 }
 
+/* Styling for skills*/
 .skills{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* wrap items to the new line when there is no space*/
     width: 45%;
     gap: 10px;
 }
 
+/* Styling for each skill*/
 .skill{
-    display: flex;
-    flex-direction: column;
+    display: flex; /* flex display for each skill*/
+    flex-direction: column; /* set skill in column direction */
     flex-wrap: wrap;
     align-items: center;
     gap: 11px;
@@ -40,37 +45,43 @@
     margin-left: 10px;
 }
 
+/* Styling for skill image container*/
 .skillImgContainer{
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Use custom variables for background color for the skill image container */
     border-radius: 100%;
     display: flex;
     width: 120px;
     height: 120px;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Center align horizontally */
 }
 
+/* Styling for skill image container's image*/
 .skillImgContainer img{
-    width: 75px;
+    width: 75px; /* width of skill image*/
 }
 
+/* Styling for paragraph from skills class*/
 .skill p{
     font-size: 25px;
-    font-family: var(--main-font);
+    font-family: var(--main-font); /* custom variable for font of skill title*/
     font-weight: 500;
 }
 
+/* Styling for all skills to line up*/
 .skill + .skill + .skill + .skill + .skill + .skill{
-    margin-bottom: 800px;
+    margin-bottom: 800px; /* Move all six skills to be closer*/
 }
 
+/* Styling for history*/
 .history{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*setting the history in a column*/
     width: 45%;
     gap: 40px;
 }
 
+/* Styling for history item*/
 .historyItem{
     display: flex;
     flex-direction: row;
@@ -82,48 +93,58 @@
 
 }
 
+/* Styling for history item image */
 .historyItem img{
     width: 200px;
     height: auto;
 
 }
 
+/* Styling for history item description */
 .historyItemInfo{
 
-    font-family: var(--main-font);
+    font-family: var(--main-font); /* Style the font to be from the custom variable */
 }
 
+/* Styling for the history item title */
 .historyItemInfo h3{
     font-size: 25px;
     font-weight: 300;
 
 }
 
+/* Styling for history item bullet points */
 .historyItemInfo ul{
     margin-top: 6px;
-    list-style-position: inside;
-    list-style: disc;
+    list-style-position: inside; /* position of list style */
+    list-style: disc; /* bullet points style */
     font-size: 20px;
     margin-left: 20px;
 }
 
+/* Media query for responsiveness on smaller devices */
 @media screen and (max-width: 830px){
+    /* Styling content for smaller devices */
     .content{
         flex-direction: column;
         align-items: center;
         gap: 34 px; 
     }
 
+    /* Styling for skills on smaller devices */
     .skills{
         width: 100%;
         flex-direction: row;
         justify-content: center;
         margin-bottom: 20px;
     }
+    
+    /* Styling for all skills in responsive mode */
     .skill + .skill + .skill + .skill + .skill + .skill{
-        margin-bottom: auto;
+        margin-bottom: auto; /* set all skills to be automatically closer from the bottom margin for smaller devices */
     }
 
+    /* Styling history for smaller devices */
     .history{
         width: 100%;
         gap: 9px;

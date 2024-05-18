@@ -1,8 +1,9 @@
-@import '../../vars.css';
+@import '../../vars.css'; /*Importing variables from a css file*/
 
+/*Styles for the main container*/
 .container{
     position: relative;
-    background-color: rgba(12, 12, 12, 0.6);
+    background-color: rgba(12, 12, 12, 0.6); /*Semi-transparent dark background color for the container*/
     border-radius: 15px;
     padding: 73px;
     margin-top: 129px;
@@ -12,8 +13,9 @@
 
 }
 
+/*Styles for the title*/
 .title{
-    color: var(--text-color);
+    color: var(--text-color); /*Custon css variable from the vars.css file*/
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 1.75px;
@@ -21,6 +23,7 @@
 
 }
 
+/*Stles for the content*/
 .content{
     display: flex;
     flex-direction: row;
@@ -28,24 +31,29 @@
 
 }
 
+/*Styles for the Avatar with the laptop image*/
 .aboutImg{
     width: 30%;
     border-radius: 10px;
 
 }
 
+/*Styles for the laptop image at frontend developer section*/
 .laptopImg{
     width: 25%;
 }
 
+/*Styles for the backend developer image*/
 .backendImg{
     width: 25%;
 }
 
+/*Styles for the mobile apps image*/
 .mobileImg{
     width: 25%;
 }
 
+/*Styles for about section description*/
 .aboutItems{
     color: var(--text-color);
     display: flex;
@@ -54,6 +62,7 @@
     gap: 50px;
 }
 
+/*Styles for each about section description*/
 .aboutItem{
     display: flex;
     flex-direction: row;
@@ -63,16 +72,18 @@
     padding: 25px;
     background-image: linear-gradient(
     90deg,rgba(165, 215, 232, 0.42)
-     0%, rgba(255, 255, 255, 0) 100% );
-     background-size: 0 100%;
-     background-repeat: no-repeat;
-     transition: 0.6s;
+    0%, rgba(255, 255, 255, 0) 100% );
+    background-size: 0 100%;
+    background-repeat: no-repeat; /*prevents background from repeating*/
+    transition: 0.6s; /*Smooth transition for background to change color*/
 }
 
+/* Hover effect for about items */
 .aboutItem:hover{
-    background-size: 100% 100%;
+    background-size: 100% 100%; /* Expands background to full size on hover */
 }
 
+/* Styles for the headings inside about items */
 .aboutItem h3{
     font-size: 25px;
     font-weight: 600;
@@ -81,25 +92,27 @@
 
 }
 
+/* Styles for the paragraphs inside about items */
 .aboutItem p{
     font-size: 25px;
     margin-left: 25px;
 }
 
+/*Responsiveness for smaller devices with a max width of 830px*/
 @media screen and (max-width: 830px){
     .container{
-        background: transparent;
-        padding-left: 0;
+        background: transparent; /*make background transparent for smaller devices*/
+        padding-left: 0; /*remove padding for smaller devices*/
         padding-right: 0;
     }
 
     .content{
-        flex-direction: column;
+        flex-direction: column; /*all content will display in a vertical column to fit*/
 
     }
 
     .aboutImg{
-        display: none;
+        display: none; /*Avatar with the laptop image is removed because it is too large*/
     }
 
     .aboutItems{

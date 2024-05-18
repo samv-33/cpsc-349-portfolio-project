@@ -1,102 +1,122 @@
-@import '../../vars.css';
+@import '../../vars.css'; /* Importing variables for consistent theming */
 
+/*Styling for the container*/
 .container{
-    color: var(--text-color);
+    color: var(--text-color); /*custom variable for text*/
     display: flex;
     margin-top: 120px;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /*custom variable for background-color*/
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding: 58px 10%;
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    width: 100vw; /* Full viewport width */
+    padding: 58px 10%; /* Padding with specific top-bottom and left-right values */
     gap: 10px;
 
 }
+
+/*Styling for the text header*/
 .text h2{
     font-size: 80px;
-    font-weight: 700;
+    font-weight: 700; /* Bold font weight */
     letter-spacing: 4px;
 }
 
+/*Styling for the text description*/
 .text p{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 40px; /* font sixe for paragraphs*/
     letter-spacing: 2px;
 }
 
+/*Styling for the links*/
 .links{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
+    flex-direction: column; /* links are set in columns */
+    align-items: flex-start; /* Align items to the start */
+    list-style: none; /* No list-style */
     gap: 26px;
 }
 
+/*Styling for each link*/
 .link{
     display: flex;
-    align-items: center;
-    gap: 26px;
+    align-items: center; /* Align links to center*/
+    gap: 26px; /* set space apart from each link*/
 }
 
+/*Styling for each link image*/
 .link img{
-    width: 10%;
-    height: auto;
+    width: 10%; /* image width set to 10% */
+    height: auto; /* height automatically adjusts */
 }
 
+/*Styling for the text header*/
 .link a{
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--text-color); /* custom variable for font color of each link*/
+    text-decoration: none; /* no bullet points*/
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.5px;
 }
 
+/*Media query for responsiveness on smaller devices*/
 @media screen and (max-width:830px){
+    /* style container for small devices*/
     .container{
-        flex-direction: column;
+        flex-direction: column; /* container is displayed in column direction to fit smaller screens*/
         gap: 23px;
     }
 
+    /* style text for small devices*/
     .text{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* set text in column direction for responsiveness*/
         align-items: center;
 
     }
 
+    /* style links for smaller devices*/
     .links{
         align-items: center;
     }
 
 }
 
+
+/*Media queries for even smaller devices with 415px max width */
 @media screen and (max-width:415px){
+    
+/*style container for devices with 415px max width */
     .container{
-        flex-direction: column;
+        flex-direction: column;  /* Set item in column direction to fit smaller devices*/
         gap: 20px;
     }
-
+     
+    
+/*style text for devices with 415px max width */
     .text{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Set text in column direction to fit smaller devices*/
         align-items: center;
 
     }
-
+/* Style text header for devices 415px max width*/
     .text h2{
         font-size: 70px;
     }
 
+/* Style text description for devices 415px max width*/
     .text p{
         font-size: 35px;
     }
-
+/* Style text links for devices 415px max width*/
     .links{
-        align-items: center;
+        align-items: center; /* align items to center for devices 415px max width*/
     }
 
+/* Style each link for devices 415px max width*/
     .link a{
-        font-size: 20px;
+        font-size: 20px; /* Set font-size to 20px*/
     }
 
 }

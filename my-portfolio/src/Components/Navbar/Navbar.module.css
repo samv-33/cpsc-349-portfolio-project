@@ -1,51 +1,58 @@
-@import '../../vars.css';
+@import '../../vars.css'; /* Importing variables from an external CSS file */
 
+/* Navbar styling */
 .Navbar{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+    z-index: 2; /* Stack order for overlapping elements */
+    margin: 0 10%; /* Horizontal margin */
 }
 
+/* Styling for the title */
 .title{
-    color: var(--text-color);
+    color: var(--text-color); /* Using variable for text color */
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
 }
 
+/* Menu container styling */
 .menu{
     display: flex;
 
 }
 
+/* Menu items container styling */
 .menuItems{
     display: flex;
-    gap: 47px;
-    list-style: none;
+    gap: 47px; /* Gap between menu items */
+    list-style: none; /*removes bullet points */
 
 }
 
+/* Menu items link styling */
 .menuItems a{
     font-size: 25px;
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--text-color); /*use variable from vars.css file for text color*/
+    text-decoration: none; /*no underline for links */
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.3s ease; /*smooth transition for hover effect */
 }
 
+
+/* Hover effect for menu items */
 .menuItems a::after{
-    content: '';
+    content: ''; /* Empty content for pseudo-element */
     position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--text-color);
-    transition: width 0.3s ease;
+    width: 0; /* Initial width of underline */
+    height: 2px; /* Height of underline */
+    bottom: -5px; /* Positioning underline below text */
+    left: 0; /* Starting from the left */
+    background-color: var(--text-color); /* Using variable for underline color */
+    transition: width 0.3s ease; /* Smooth transition for width */
 }
 
 /*Change the text color when hovering over menuItems*/
@@ -53,21 +60,26 @@
     color: aqua; 
 }
 
+/* Expand underline on hover */
 .menuItems a:hover::after{
     width: 100%;
 }
 
+/* Menu icon styling */
 .menuOptn{
-    display: none;
+    display: none; /*Hide menu option for large devices*/
 }
 
+
+/* Responsive styling for screen widths 830px and below */
 @media screen and (max-width: 830px) {
     .Navbar{
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column;  /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
 
     }
 
+    /*styling for the menu on smaller devices*/
     .menu{
         position: absolute;
         right: 0;
@@ -78,24 +90,26 @@
         z-index: 3;
     }
 
+    /*menu is displayed for the user to press*/
     .menuOptn{
         display: block;
-        cursor: pointer;
+        cursor: pointer; /*displays the mouse cursor to point to the menu when hovered*/
     }
 
+    /*all menu items styled and are initially hidden*/
     .menuItems{
-        display: none;
+        display: none; 
         flex-direction: column;
         align-items: center;
         gap: 13px;
         border-radius: 10px;
-        background: rgb(25, 55, 109);
         background: linear-gradient(0deg, rgb(56, 142, 60, 0.2) 0%,
-         rgb(56, 142, 60, 1) 100%);
+         rgb(56, 142, 60, 1) 100%); /*background is a semi-transparent*/
         padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
+        box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25); /*shadow around the menu*/
     }
 
+    /*menu items displays when clicked*/
     .menuOpen{
         display: flex;
         z-index: 1; 

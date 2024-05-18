@@ -6,11 +6,14 @@ import { getImageUrl } from '../../utility'
 // Functional component 'About' to render the "About Me" section
 const About = () => {
   return <section className={styles.container} id="about">
+    {/*Title section*/}
     <h2 className={styles.title}>About Me</h2>
     <div className={styles.content}>  
+        {/*Avatar image with a desk is displayed here. Used getImageUrl function to obtain the image from the public folder.*/}
         <img className={styles.aboutImg} src={getImageUrl("assets/about/myavatar_desk.png")} alt="me-with-laptop"/>
     <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
+            {/*Frontend developer section for the About Me portion */}
             <img className={styles.laptopImg} src={getImageUrl("assets/about/laptop.png")} alt="laptop-img"/>
             <div className={styles.aboutItemText}>
                 <h3>Frontend Developer</h3>
@@ -20,7 +23,7 @@ const About = () => {
             </div>
 
         </li>
-        
+        {/*Backend developer section for the About Me portion */}
         <li className={styles.aboutItem}>
             <img className={styles.backendImg} src={getImageUrl("assets/about/backendIcon.png")} alt="backend-img"/>
             <div className={styles.aboutItemText}>
@@ -33,6 +36,7 @@ const About = () => {
         </li>
         
         <li className={styles.aboutItem}>
+            {/*Mobile App developer section for the About Me portion */}
             <img className={styles.mobileImg} src={getImageUrl("assets/about/mobileIcon.png")} alt=""/>
             <div className={styles.aboutItemText}>
                 <h3>Mobile App Developer</h3>

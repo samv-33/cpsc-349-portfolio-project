@@ -9,24 +9,24 @@
     margin-top: 49px;
     margin-left: 10%;
     margin-right: 10%;
-    z-index: 1;
+    z-index: 1; /*Makes sure the content is above the background elements*/
 }
 
-/*Introduction information*/
+/*Introduction information styling*/
 .content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: var(--text-color);
     z-index: 1;
-    overflow: hidden;
+    overflow: hidden; /*Hiding overflowing elements to be hidden before the transition*/
 }
 
 /*Animation that transitions content from left to righ*/
 .title, .description, .contactInfo {
     transform: translateX(-100%); /* Start off-screen to the left */
     transition: transform 2s ease-out; /* Smooth transition */
-    opacity: 0;
+    opacity: 0; /*Start with the content invisible*/
 }
 
 .title{
@@ -34,14 +34,14 @@
     font-weight: 900;
     margin-bottom: 33px;
     font-family: var(--main-font);
-    background: linear-gradient( 
+    background: linear-gradient( /*shadow gradient color on the right side of the title*/
     90deg,
      rgba(255, 255, 255, 1) 70%,
-     rgba(255, 255, 255, 0) 120%
+     rgba(255, 255, 255, 0) 115%
      );
-     -webkit-text-fill-color: transparent;
-     -webkit-background-clip: text;
-      background-clip: text;
+     -webkit-text-fill-color: transparent; /* Text color transparent for gradient */
+     -webkit-background-clip: text; /* Apply gradient to text */
+     background-clip: text; /* Standard background clip for text */
 }
 
 .description{
@@ -59,7 +59,7 @@
     font-weight: 600;
     padding: 17px 26px;
     border: 1px solid #fff;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.20); /* Add shadow for depth */
 
 }
 
@@ -69,35 +69,36 @@
 
 .heroImg{
     width: 35%;
-    z-index: 0;
+    z-index: 0; /*Image is behind the text content*/
     border-radius: 20px;
 
     animation: floating 3s infinite alternate ease-in-out,
-                fade-in-out 10s infinite alternate ease-in-out;
+                fade-in-out 10s infinite alternate ease-in-out; /* Apply floating and fade animations */
 }
 
 @keyframes floating{
     0%{
-        transform: translate(0, 0px);
+        transform: translate(0, 0px);  /* Start at original position */
     }
     50%{
-        transform: translate(0, 30px);
+        transform: translate(0, 30px); /* Move up */
     }
     100%{
-        transform: translate(0, 0px);
+        transform: translate(0, 0px); /* Move back to original position */
     }
 }
 
 @keyframes fade-in-out{
     0%, 100%{
-        opacity: 0;
+        opacity: 0; /* Start and end invisible */
     }
     50%{
-        opacity: 1;
+        opacity: 1; /* Middle of the animation is fully visible */
     }
 
 }
 
+/*blur effect the top left of hero section*/
 .topBlur{
     position: absolute;
     width: 50vw;
@@ -107,11 +108,12 @@
     top: -128px;
     left: -10vw;
     border-radius: 764px;
-    background: rgba(56, 142, 60, 0.7);
-    filter: blur(100px);
-    z-index: -1;
+    background: rgba(56, 142, 60, 0.7); /* Semi-transparent green */
+    filter: blur(100px); /* Apply blur effect */
+    z-index: -1; /* Behind all other content */
 }
 
+/*blur effect at bottom right of hero section*/
 .botBlur{
     position: absolute;
     width: 70vw;
@@ -121,17 +123,19 @@
     top: 246px;
     right: -25vw;
     border-radius: 764px;
-    background: rgba(56, 142, 60, 0.7);
-    filter: blur(100px);
-    z-index: -1;
+    background: rgba(56, 142, 60, 0.7); /* Semi-transparent green */
+    filter: blur(100px); /* Apply blur effect */
+    z-index: -1; /* Behind all other content */
 }
 
+/*Responsive display for smaller devices */
 @media screen and (max-width: 830px)
 {
     .container{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* Stack elements vertically in reverse order */
     }
     .content{
-        align-items: center;
+        align-items: center; /* Center align text content */
+        color: var(--text-color); /*makes all content color to white*/
     }
 }

@@ -1,28 +1,32 @@
 @import "../../vars.css";
 
+
+/* Container styling */
 .container{
     margin-top: 76px;
-    color: var(--text-color);
-    margin-left: 10%;
-    margin-right: 10%;
+    color: var(--text-color); /*use the text color variable from vars.css*/
+    margin-left: 10%; /*create margins to the left of the item by 10%*/
+    margin-right: 10%; /*create margins to the right of the item by 10%*/
 
 }
 
+/* Title styling */
 .title{
     font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+    font-weight: 700; 
+    letter-spacing: 1.75px; /*space between each letters*/
+    text-transform: uppercase; /*make all the letters uppercase*/
 
 }
 
+/* Projects section styling */
 .projects{
     margin-top: 37px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row; /*displays projects in a row*/
+    flex-wrap: wrap; /*makes items move to the next line when there is no space*/
+    align-items: center; 
+    justify-content: center; /*center align items horizontally*/
     gap: 35px;
     width: 100%;
 }

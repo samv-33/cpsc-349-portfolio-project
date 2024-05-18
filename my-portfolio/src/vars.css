@@ -1,12 +1,17 @@
-:root{
-    /*Custon css colors*/
-    --text-color: white;
-    --primary-color: #4CAF50;
-    --secondary-color: #388E3C;
-    --dark-color: #1B5E20;
-    --bg-color: #0D3C14;
+    /* 
+    The :root pseudo-class in CSS represents the highest-level parent in the document tree.
+    It is the same as the <html> element but has higher specificity.
+    Defining CSS custom variables in :root makes them globally accessible throughout the entire stylesheet.
+    This keeps up with its consistency, maintainability and reusability across the styling.
+    */
+:root {
+    /* Custom CSS colors */
+    --text-color: #fff;              /* Color used for text */
+    --primary-color: #4CAF50;         /* Primary color used for main elements and highlights */
+    --secondary-color: #388E3C;       /* Secondary color for complementary elements */
+    --dark-color: #1B5E20;            /* Darker shade, used for accents or backgrounds */
+    --bg-color: #0D3C14;              /* Background color for the main sections or whole page */
 
-    /*Custom css fonts*/
-    --main-font: "Roboto";
-
+    /* Custom CSS font*/
+    --main-font: "Roboto";            /* Main font for the text content */
 }
